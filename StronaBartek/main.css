@@ -94,3 +94,10 @@ td {
   text-decoration: none;
   border-radius: 8px;
 }
+.mapa {
+  text-align: center;
+  margin-top: 60px;
+}
+.mapa img {
+  max-width: 800px;
+}
