@@ -12,10 +12,10 @@
   <body>
     <h1>Wybrane postacie z czasów panowania Bolesława Chrobrego</h1>
 
-    <table class="cards-table" style="--main-color: rgb(244, 110, 110)">
+    <table class="cards-table">
       <tr>
         <td>
-          <div class="card">
+          <div class="card" style="--main-color: rgb(138, 138, 210)">
             <div class="imgBx">
               <img src="images/otton.jpeg" alt="Otton III" />
             </div>
@@ -30,7 +30,7 @@
           </div>
         </td>
         <td>
-          <div class="card">
+          <div class="card" style="--main-color: rgb(92, 61, 21)">
             <div class="imgBx">
               <img src="images/boleslaw.png" alt="Bolesław Chrobry" />
             </div>
@@ -45,7 +45,7 @@
           </div>
         </td>
         <td>
-          <div class="card">
+          <div class="card" style="--main-color: rgb(244, 110, 110)">
             <div class="imgBx">
               <img
                 src="images/wojciech.png"
@@ -65,5 +65,15 @@
         </td>
       </tr>
     </table>
+    <script type="text/javascript" src="tilt.js"></script>
+    <script type="text/javascript">
+      VanillaTilt.init(document.querySelector("td"), {
+        max: 25,
+        speed: 400,
+      });
+
+      //It also supports NodeList
+      VanillaTilt.init(document.querySelectorAll("td"));
+    </script>
   </body>
 </html>
