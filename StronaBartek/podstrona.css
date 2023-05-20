@@ -2,50 +2,45 @@
 * {
   margin: 0px;
   padding: 0px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 
   color: white;
 }
+.first_wave {
+  background-image: url("svg/svg-4.svg");
+  height: 400px;
+  background-position: top;
+  background-size: 0.2;
+}
 body {
   text-align: center;
-  background-image: linear-gradient(
-    to right top,
-    #040e1d,
-    #0a1d38,
-    #152955,
-    #2a3472,
-    #453e8e
-  );
+  background-color: #001220;
 }
 header {
-  height: auto;
+  height: 100px;
   text-align: center;
-  text-shadow: 0 35px 80px rgb(0, 0, 0);;
+  text-shadow: 0 35px 80px rgb(0, 0, 0);
   font-size: 50px;
   padding: 50px;
+  color: var(--main-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 main {
   display: block;
   margin: auto;
   padding: auto;
   text-align: center;
-  background-image: linear-gradient(
-    to right top,
-    #040e1d,
-    #0a1d38,
-    #152955,
-    #2a3472,
-    #453e8e
-  );
+  background-color: #01182a;
   width: 80%;
-  height: 900px;
+  height: 600px;
   box-shadow: 0 35px 80px rgb(0, 0, 0);
   border-radius: 40px;
   padding: 30px;
 }
-.arrow{
-    transform:rotateZ(180deg);
-    width: 80px;
-    float: left;
-    
+.arrow {
+  transform: rotateZ(180deg);
+  width: 80px;
+  float: left;
 }
