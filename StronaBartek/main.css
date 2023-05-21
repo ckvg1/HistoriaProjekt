@@ -131,6 +131,7 @@ td {
 }
 body {
   background-color: #001220;
+  overflow-x: hidden;
 }
 .spacer {
   aspect-ratio: 960/200;
