@@ -58,7 +58,7 @@ body::-webkit-scrollbar {
   width: 10px;
   height: 100%;
 
-  background-image: linear-gradient(to top, rgb(0, 125, 171), rgb(0, 213, 167));
+  background-image: linear-gradient(to top, rgb(0, 94, 255), rgb(174, 0, 255));
   animation: animate 5s linear infinite;
 }
 @keyframes animate {
@@ -117,6 +117,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
+  
 }
 
 .arrow {
@@ -190,7 +191,7 @@ hr {
   border-radius: 20px;
   background-image: linear-gradient(
     to right,
-    rgb(0, 171, 125),
+    rgb(149, 0, 255),
     rgb(65, 25, 105)
   );
   height: 5px;
