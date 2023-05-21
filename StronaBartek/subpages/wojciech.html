@@ -2,13 +2,16 @@
 <html>
   <head>
     <link rel="stylesheet" href="wojciech.css" />
+    <link rel="icon" type="image/png" href="../images/king.png" />
+    <title>Biskup Wojciech</title>
   </head>
   <body style="--main-color: rgb(244, 110, 110)">
-    
-      <header>
-        <p>Biskup Wojciech</p>
-      </header>
-    
+    <div id="progressbar"></div>
+    <div id="scrollPath"></div>
+    <header>
+      <p>Biskup Wojciech</p>
+    </header>
+
     <main>
       <nav>
         <a href="../main.html">
@@ -16,7 +19,7 @@
         </a>
       </nav>
     </main>
-    
+
     <div class="footer">
       <ul>
         Autorzy:
@@ -27,5 +30,13 @@
       <p>:)</p>
       <p>Źródła:</p>
     </div>
+    <script>
+      let progress = document.getElementById("progressbar");
+      let totalHeight = document.body.scrollHeight - window.innerHeight;
+      window.onscroll = function () {
+        let progressHeight = (window.pageYOffset / totalHeight) * 100;
+        progress.style.height = progressHeight + "%";
+      };
+    </script>
   </body>
 </html>

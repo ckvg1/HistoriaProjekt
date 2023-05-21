@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Stint+Ultra+Condensed&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 * {
   padding: 0px;
   margin: 0px;
@@ -118,7 +118,6 @@ td {
   text-align: center;
   color: white;
   font-weight: 200;
-  
 }
 .footer ul {
   padding: 0px 0px 30px 0px;
@@ -166,4 +165,65 @@ body {
 }
 .layer4 {
   background-image: url("svg/svg-5.svg");
+}
+body::-webkit-scrollbar {
+  visibility: hidden;
+}
+#scrollPath {
+  position: fixed;
+  margin: 0px;
+  top: 0;
+  right: 0;
+  width: 10px;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.05);
+}
+#progressbar {
+  position: fixed;
+  top: 0px;
+  margin: 0px;
+  right: 0px;
+  width: 10px;
+  height: 100%;
+  background-image: linear-gradient(
+    to top,
+    rgb(162, 64, 110),
+    rgb(107, 27, 59)
+  );
+  animation: animate 5s linear infinite;
+}
+@keyframes animate {
+  0%,
+  100% {
+    filter: hue-rotate(0deg);
+  }
+  50% {
+    filter: hue-rotate(80deg);
+  }
+}
+#progressbar:before {
+  content: " ";
+  position: absolute;
+  padding: 0px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(
+    to top,
+    rgb(144, 49, 165),
+    rgb(176, 99, 51)
+  );
+  filter: blur(10px);
+}
+#progressbar:after {
+  content: " ";
+  padding: 0px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to top, rgb(96, 20, 30), rgb(131, 43, 97));
+  filter: blur(30px);
 }

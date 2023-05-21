@@ -8,17 +8,19 @@
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="main.css" />
+    <link rel="icon" type="image/png" href="images/king.png" />
   </head>
   <body>
+    <div id="progressbar"></div>
+    <div id="scrollPath"></div>
     <div class="spacer layer1"></div>
     <section class="section0">
-      
       <h1>Wybrane postacie z czasów panowania Bolesława Chrobrego</h1>
 
       <table class="cards-table">
         <tr>
           <td>
-            <div class="card" style="--main-color: rgb(0.00,0.02,0.20)">
+            <div class="card" style="--main-color: rgb(0, 0.02, 0.2)">
               <div class="imgBx">
                 <img src="images/otton.jpeg" alt="Otton III" />
               </div>
@@ -34,7 +36,7 @@
             </div>
           </td>
           <td>
-            <div class="card" style="--main-color: rgb(0.00,0.02,0.20)">
+            <div class="card" style="--main-color: rgb(0, 0.02, 0.2)">
               <div class="imgBx">
                 <img src="images/boleslaw.png" alt="Bolesław Chrobry" />
               </div>
@@ -49,7 +51,7 @@
             </div>
           </td>
           <td>
-            <div class="card" style="--main-color: rgb(0.00,0.02,0.20)">
+            <div class="card" style="--main-color: rgb(0, 0.02, 0.2)">
               <div class="imgBx">
                 <img
                   src="images/wojciech.png"
@@ -120,7 +122,7 @@
     <section class="section2">
       <p align="center">
         <iframe
-          style="margin: 0px; padding: 0px;"
+          style="margin: 0px; padding: 0px"
           width="760"
           height="515"
           src="https://www.youtube.com/embed/6JIdEk-Cw7o"
@@ -152,6 +154,13 @@
 
       //It also supports NodeList
       VanillaTilt.init(document.querySelectorAll("td"));
+
+      let progress = document.getElementById("progressbar");
+      let totalHeight = document.body.scrollHeight - window.innerHeight;
+      window.onscroll = function () {
+        let progressHeight = (window.pageYOffset / totalHeight) * 100;
+        progress.style.height = progressHeight + "%";
+      };
     </script>
   </body>
 </html>
