@@ -171,12 +171,13 @@ nav {
   gap: 50px;
   align-items: flex-start;
   font-size: 20px;
-  margin-bottom: 50px;
 }
 nav a {
   margin-top: 25px;
   text-decoration: none;
   transition-duration: 0.5s;
+  height: 80px;
+  width: 25%;
 }
 nav a:hover {
   cursor: default;
@@ -233,6 +234,7 @@ main::-webkit-scrollbar {
 main section {
   margin-top: 200px;
   font-size: 25px;
+  margin-bottom: 40px;
 }
 main section h1,
 h3 {
