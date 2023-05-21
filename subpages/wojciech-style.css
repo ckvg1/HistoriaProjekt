@@ -1,4 +1,38 @@
 @import url("https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@media (max-width: 505px) {
+  main {
+    height: 60%;
+  }
+  body {
+    height: 100%;
+  }
+  main section p {
+    font-size: 18px;
+  }
+  main section h1{
+    font-size: 30px;
+  }
+  main secrion h4{
+    font-size: 20px;
+  }
+  nav{
+    width: 150px;
+    font-size: smaller;
+    height: 100px;
+    align-items:first baseline;
+    justify-content:space-evenly;
+    gap: 10px;
+    
+  }
+  nav a{
+    font-size: 20px;
+    width: 20px;
+    height: 20px;
+  }
+  main .staticNAV a img{
+    width: 30px;
+  }
+}
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Stint+Ultra+Condensed&display=swap");
 * {
@@ -104,10 +138,14 @@ body::-webkit-scrollbar {
   z-index: -1;
   background: none;
 }
+html{
+  overflow-x: hidden;
+}
 body {
   text-align: center;
-  aspect-ratio: 960/540;
+  overflow-x: hidden;
   width: 100%;
+  height: 160%;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -144,7 +182,7 @@ header {
 }
 .footer {
   margin-top: 100px;
-  position: sticky;
+  position: static;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -152,7 +190,8 @@ header {
   height: 120px;
   background-color: #000102;
   left: 0px;
-  right: 0px;
+  bottom: 0px;
+
   text-align: center;
   color: white;
   font-weight: 200;
@@ -212,7 +251,7 @@ main {
   text-align: center;
   background-color: #01182a;
   width: 80%;
-  height: 1000px;
+  height: 800px;
   box-shadow: 0 35px 80px rgb(0, 0, 0);
   border-radius: 40px;
   padding: 30px;
