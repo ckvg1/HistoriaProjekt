@@ -5,7 +5,7 @@
   margin: 0px;
   padding: 0px;
   font-family: "Poppins", sans-serif;
-
+  scroll-behavior: smooth;
   color: white;
 }
 
@@ -106,6 +106,7 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  background-color: #01182a;
   background-image: url("../svg/svg-wojciech-background.svg");
 }
 
@@ -119,19 +120,7 @@ header {
   align-items: center;
   justify-content: center;
 }
-main {
-  display: block;
-  margin: auto;
-  padding: auto;
-  text-align: center;
-  background-color: #01182a;
-  width: 80%;
-  height: 800px;
-  box-shadow: 0 35px 80px rgb(0, 0, 0);
-  border-radius: 40px;
-  padding: 30px;
-  margin-top: 50px;
-}
+
 .arrow {
   transform: rotateZ(180deg);
   width: 80px;
@@ -168,4 +157,83 @@ main {
   list-style-type: none;
   font-family: Prompt;
   font-weight: 600;
+}
+nav {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 50px;
+  align-items: flex-start;
+  font-size: 20px;
+  margin-bottom: 50px;
+}
+nav a {
+  margin-top: 20px;
+  text-decoration: none;
+  transition-duration: 0.5s;
+}
+nav a:hover {
+  cursor: default;
+}
+nav a:hover:nth-child(1) {
+  color: rgb(218, 192, 80);
+}
+nav a:hover:nth-child(2) {
+  color: rgb(167, 118, 33);
+}
+nav a:hover:nth-child(3) {
+  color: rgb(144, 44, 202);
+}
+nav a:hover:nth-child(4) {
+  color: rgb(114, 51, 186);
+}
+hr {
+  border: none;
+  border-radius: 20px;
+  background-image: linear-gradient(
+    to right,
+    rgb(224, 198, 81),
+    rgb(182, 112, 55),
+    rgb(65, 25, 105) 70%
+  );
+  height: 5px;
+}
+main {
+  display: block;
+  margin: auto;
+  padding: auto;
+  text-align: center;
+  background-color: #01182a;
+  width: 80%;
+  height: 1000px;
+  box-shadow: 0 35px 80px rgb(0, 0, 0);
+  border-radius: 40px;
+  padding: 30px;
+  padding-top: 0px;
+  margin-top: 80px;
+  overflow-y: scroll;
+}
+main::-webkit-scrollbar {
+  scroll-margin: 0px;
+}
+.staticNAV {
+  padding-top: 20px;
+  text-align: center;
+  width: 80%;
+  position: absolute;
+  height: 150px;
+  background-color: #01182a;
+}
+main section {
+  margin-top: 200px;
+  font-size: 25px;
+}
+main section h1,
+h4 {
+  margin-bottom: 30px;
+}
+main section p {
+  margin-bottom: 30px;
+}
+main section b {
+  color: rgb(184, 134, 50);
 }
