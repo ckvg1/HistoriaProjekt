@@ -1,7 +1,48 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Stint+Ultra+Condensed&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-
+@media (max-width: 400px) {
+  .cards-table {
+    transform: scale(0.8);
+    margin-top: 0px;
+    margin: 0px;
+    text-align: center;
+  }
+  .cards-table .card {
+    margin-bottom: 50px;
+    margin-top: 50px;
+  }
+  .cards-table tr td {
+    width: 100%;
+    display: table-row;
+  }
+  .cards-table tr {
+    height: auto;
+  }
+  .section2 p iframe {
+    width: 300px;
+    height: 200px;
+  }
+  .section1 .mapa {
+    transform: scale(0.7);
+    width: 400px;
+  }
+  .section1 area coords {
+    transform: scale(0.7);
+  }
+  .footer * {
+    width: 100%;
+    display: block;
+    font-size: 10px;
+  }
+  body {
+    overflow-x: hidden;
+  }
+  .section1 {
+    margin-top: 0px;
+    padding: 0px;
+  }
+}
 * {
   padding: 0px;
   margin: 0px;
@@ -9,15 +50,10 @@
 
   color: white;
 }
-@media (max-width: 800px){
-  .mapa{
-      transform: scale(0.6, 0.6);
-  }
-}
-@media (max-width: 480px){
-  .mapa{
-      transform: scale(0.3, 0.3);
-  }
+body {
+  background-color: #001220;
+  overflow-x: hidden;
+  width: 100%;
 }
 h1 {
   text-align: center;
@@ -142,10 +178,7 @@ td {
   font-family: Prompt;
   font-weight: 600;
 }
-body {
-  background-color: #001220;
-  overflow-x: hidden;
-}
+
 .spacer {
   aspect-ratio: 960/200;
   width: 100%;
@@ -254,4 +287,3 @@ body::-webkit-scrollbar {
   background-image: linear-gradient(to top, rgb(96, 20, 30), rgb(131, 43, 97));
   filter: blur(30px);
 }
-
