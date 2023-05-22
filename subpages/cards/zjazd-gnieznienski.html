@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="zjazd-style.css" />
+    <link rel="icon" type="image/png" href="../../images/king.png" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Zjazd Gnieźnieński</title>
+  </head>
+  <body style="--main-color: rgb(244, 110, 110)">
+    <div id="progressbar"></div>
+    <div id="scrollPath"></div>
+    <header>
+      <p><b>Zjazd Gnieźnieński</b></p>
+    </header>
+
+    <main>
+      <div class="staticNAV">
+        <a href="../../index.html">
+          <img class="arrow" src="../../images/right-arrow.png" alt="arrow" />
+        </a>
+        <nav>
+          <a> W skrócie </a>
+          <a> Galeria </a>
+          <a href="#wydarzenia"> Wydarzenia </a>
+          <a> Biografia </a>
+        </nav>
+        <hr />
+      </div>
+      <section>
+        <h1>Podstawowe informacje</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat.
+        </p>
+        <h4>Narodziny</h4>
+      </section>
+    </main>
+
+    <div class="footer">
+      <ul>
+        Autorzy:
+        <li>Remigiusz Łukasik</li>
+        <li>Bartosz Łukasik</li>
+        <li>Jacek Dombrowski</li>
+      </ul>
+      <p><b>STRONA W BUDOWIE</b></p>
+      <p>Źródła:</p>
+    </div>
+    <script>
+      let progress = document.getElementById("progressbar");
+      let totalHeight = document.body.scrollHeight - window.innerHeight;
+      window.onscroll = function () {
+        let progressHeight = (window.pageYOffset / totalHeight) * 100;
+        progress.style.height = progressHeight + "%";
+      };
+    </script>
+  </body>
+</html>

@@ -104,7 +104,7 @@ body {
   background-position: center;
   background-size: cover;
   background-color: #01182a;
-  background-image: url("../svg/svg-zjazd-background.svg");
+  background-image: url("../../svg/svg-zjazd-background.svg");
   background-color: #01182a;
 }
 
@@ -133,7 +133,7 @@ header {
   background-size: cover;
 }
 .layer4 {
-  background-image: url("../svg/svg-5.svg");
+  background-image: url("../../svg/svg-5.svg");
 }
 .footer {
   margin-top: 100px;
