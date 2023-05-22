@@ -9,11 +9,10 @@
 
   color: white;
 }
-@media (max-width:500px){
-  .mapa{
-    transform: scale(0.6);
-  }
+.mapa:hover{
+  transform: scale(0.6, 0.6);
 }
+
 h1 {
   text-align: center;
 }
@@ -107,9 +106,10 @@ td {
 .mapa {
   text-align: center;
   margin-top: 60px;
+  width: 800px;
 }
 .mapa img {
-  max-width: 800px;
+  width: 100%;
 }
 .footer {
   position: absolute;
