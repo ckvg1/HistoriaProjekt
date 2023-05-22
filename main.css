@@ -242,3 +242,8 @@ body::-webkit-scrollbar {
   background-image: linear-gradient(to top, rgb(96, 20, 30), rgb(131, 43, 97));
   filter: blur(30px);
 }
+@media (max-width:500px){
+  .mapa{
+    transform: scale(0.6, 0.6);
+  }
+}
