@@ -175,10 +175,10 @@ nav a:hover {
   cursor: default;
 }
 nav a:hover:nth-child(1) {
-  color: rgb(218, 192, 80);
+  color: #E356F9;
 }
 nav a:hover:nth-child(2) {
-  color: rgb(167, 118, 33);
+  color: #B23EC4;
 }
 nav a:hover:nth-child(3) {
   color: rgb(144, 44, 202);
