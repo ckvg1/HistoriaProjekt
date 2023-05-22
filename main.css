@@ -20,15 +20,15 @@
     height: auto;
   }
   .section2 p iframe {
-    width: 300px;
-    height: 200px;
+    width: 340px;
+    height: 300px;
   }
   .section1 .mapa {
-    transform: scale(0.7);
+    transform: scale(0.8);
     width: 400px;
   }
   .section1 area coords {
-    transform: scale(0.7);
+    transform: scale(0.8);
   }
   .footer * {
     width: 100%;
