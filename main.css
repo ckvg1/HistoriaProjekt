@@ -169,6 +169,7 @@ td {
   font-weight: 200;
   margin-bottom: 0px;
   z-index: 1;
+  margin-top: 0px;
 }
 .footer ul {
   padding: 0px 0px 30px 0px;
@@ -211,9 +212,16 @@ td {
 }
 .section2 {
   background-color: #001220;
+  
+  background-image: url("svg/section2.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 .layer4 {
   background-image: url("svg/svg-5.svg");
+  aspect-ratio: 960/100;
+  
 }
 .section3 {
   width: 100%;
