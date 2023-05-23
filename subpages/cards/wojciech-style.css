@@ -284,3 +284,19 @@ main section p {
 main section b {
   color: rgb(184, 134, 50);
 }
+/*
+.galeria-container {
+  margin-top: 80px;
+}
+.galeria-zdjec {
+  margin-left: auto;
+  margin-right: auto;
+  background-color: none;
+}
+.galeria-zdjec tr td {
+  padding: 30px;
+}
+.galeria-zdjec img {
+  width: 200px;
+  height: 280px;
+} */
