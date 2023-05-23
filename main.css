@@ -2,36 +2,32 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Stint+Ultra+Condensed&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
-@media (max-width: 1300px) {
-  .cards-table {
-    margin-top: 0px;
-    margin: 0px;
-    text-align: center;
+@media (max-width: 1100px) {
+  .section0 .cards-table {
   }
-  .cards-table .card {
-    margin-bottom: 200px;
-    margin-top: 150px;
-    transform: scale(1.5);
+  .section0 .cards-table tr td .card {
+    transform: scale(0.8);
+    margin: auto;
   }
-  .section0 h1 {
-    font-size: 1px;
-  }
-  .cards-table tr td {
-    width: 100%;
+
+  .section0 .cards-table tr td {
     display: table-row;
+    width: 50%;
   }
-  .cards-table tr {
+  .section0 .cards-table tr {
+    display: table-row;
+    text-align: center;
     height: auto;
   }
   .section2 p iframe {
-    width: 800px;
-    height: 700px;
+    margin-top: 10%;
+    width: 90%;
   }
   .section1 .mapa {
-    transform: scale(0.9);
+    width: 90%;
   }
-  .section1 area coords {
-    transform: scale(0.8);
+  .section1 map area {
+    width: 90%;
   }
   .footer * {
     width: 100%;
@@ -207,6 +203,8 @@ td {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  text-align: center;
+  padding: 0px;
 }
 .section1 {
   /*background-color: #040a0e;*/
@@ -220,7 +218,8 @@ td {
 }
 .section2 {
   background-color: #001220;
-
+  width: 100%;
+  height: 100%;
   background-image: url("svg/section2.svg");
   background-repeat: no-repeat;
   background-position: center;
@@ -248,7 +247,6 @@ body::-webkit-scrollbar {
   top: 0;
   right: 0;
   z-index: -1;
-
   width: 10px;
   height: 100%;
   background-color: rgba(255, 255, 255, 0.05);
