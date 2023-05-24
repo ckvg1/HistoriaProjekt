@@ -42,35 +42,7 @@
   color: white;
 }
 
-/*@keyframes zmiana-tla1 {
-  from {
-    aspect-ratio: 950/540;
-  }
-  to {
-    aspect-ratio: 800/600;
-  }
-}
-body:hover {
-  animation-name: zmiana-tla1;
-  animation-duration: 2s;
-  animation-fill-mode: forwards;
-  animation-timing-function: ease-out;
-}
-@keyframes zmiana-tla2 {
-    from {
-      aspect-ratio: 850/600;
-    }
-    to {
-      aspect-ratio: 950/540;
-    }
-  }
-main:hover {
-  animation-name: zmiana-tla2;
-  animation-duration: 2s;
-  animation-fill-mode: forwards;
-  
-}
-*/
+
 body::-webkit-scrollbar {
   width: 0px;
 }
