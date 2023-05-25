@@ -22,7 +22,7 @@
     <link rel="icon" type="image/png" href="images/king.png" />
   </head>
   <body>
-    <div id="popupp" style="visibility: visible">
+    <div id="popupp" style="visibility: hidden">
       <span class="closebtn" onclick="this.parentElement.style.display='none';"
         >&times;</span
       >
@@ -182,32 +182,37 @@
     </div>
     <!-- efekt na kartach -->
     <script type="text/javascript" src="tilt.js"></script>
-    <!-- pasek do scrolla -->
+    
     <script type="text/javascript">
-      VanillaTilt.init(document.querySelector("td"), {
-        max: 25,
-        speed: 400,
-      });
+      let screen = screen.width;
+      if (screen > 480) {
+        VanillaTilt.init(document.querySelector("td"), {
+          max: 25,
+          speed: 400,
+        });
 
-      //It also supports NodeList
-      VanillaTilt.init(document.querySelectorAll("td"));
+        //It also supports NodeList
+        VanillaTilt.init(document.querySelectorAll("td"));
 
-      let progress = document.getElementById("progressbar");
-      let totalHeight = document.body.scrollHeight - window.innerHeight;
-      window.onscroll = function () {
-        let progressHeight = (window.pageYOffset / totalHeight) * 100;
-        progress.style.height = progressHeight + "%";
-      };
+        let progress = document.getElementById("progressbar");
+        let totalHeight = document.body.scrollHeight - window.innerHeight;
+        window.onscroll = function () {
+          let progressHeight = (window.pageYOffset / totalHeight) * 100;
+          progress.style.height = progressHeight + "%";
+        };
+      }
     </script>
     <!-- Do info o dzialaniu na urzadzeniach mobilnych -->
     <script type="text/javascript">
-      (function () {
-        var visited = localStorage.getItem("visited");
-        if (!visited) {
-          document.getElementById("popupp").style.visibility = "visible";
-          localStorage.setItem("visited", true);
-        }
-      })();
+      if (screen < 600) {
+        (function () {
+          var visited = localStorage.getItem("visited");
+          if (!visited) {
+            document.getElementById("popupp").style.visibility = "visible";
+            localStorage.setItem("visited", true);
+          }
+        })();
+      }
     </script>
   </body>
 </html>
