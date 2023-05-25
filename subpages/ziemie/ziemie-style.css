@@ -285,13 +285,9 @@ main section p {
 main section b {
   color: rgb(184, 134, 50);
 }
-@media (max-width: 1250px) {
-	div.mapka{
-		transform: scale(0.6, 0.6);
-	}
-}
-@media (max-width: 750px) {
-	div.mapka{
-		transform: scale(0.36, 0.36);
-	}
+img.mapka_ziemie{
+	max-height: 600px;
+	width: 90%;
+	margin: auto;
+	border: none;
 }
