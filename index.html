@@ -182,7 +182,7 @@
     </div>
     <!-- efekt na kartach -->
     <script type="text/javascript" src="tilt.js"></script>
-    
+
     <script type="text/javascript">
       let screen = screen.width;
       if (screen > 480) {
@@ -190,17 +190,17 @@
           max: 25,
           speed: 400,
         });
-
-        //It also supports NodeList
-        VanillaTilt.init(document.querySelectorAll("td"));
-
-        let progress = document.getElementById("progressbar");
-        let totalHeight = document.body.scrollHeight - window.innerHeight;
-        window.onscroll = function () {
-          let progressHeight = (window.pageYOffset / totalHeight) * 100;
-          progress.style.height = progressHeight + "%";
-        };
       }
+
+      //It also supports NodeList
+      VanillaTilt.init(document.querySelectorAll("td"));
+
+      let progress = document.getElementById("progressbar");
+      let totalHeight = document.body.scrollHeight - window.innerHeight;
+      window.onscroll = function () {
+        let progressHeight = (window.pageYOffset / totalHeight) * 100;
+        progress.style.height = progressHeight + "%";
+      };
     </script>
     <!-- Do info o dzialaniu na urzadzeniach mobilnych -->
     <script type="text/javascript">
