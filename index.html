@@ -22,6 +22,14 @@
     <link rel="icon" type="image/png" href="images/king.png" />
   </head>
   <body>
+    <div id="popupp" style="visibility: visible">
+      <span class="closebtn" onclick="this.parentElement.style.display='none';"
+        >&times;</span
+      >
+      <b>Uwaga! </b> strona może działać nieprawidłowo na urządzeniach
+      mobilnych.
+    </div>
+
     <div id="progressbar"></div>
     <div id="scrollPath"></div>
     <div class="spacer layer1"></div>
@@ -172,8 +180,9 @@
       </b>
       <p>Źródła:</p>
     </div>
-
+    <!-- efekt na kartach -->
     <script type="text/javascript" src="tilt.js"></script>
+    <!-- pasek do scrolla -->
     <script type="text/javascript">
       VanillaTilt.init(document.querySelector("td"), {
         max: 25,
@@ -189,6 +198,16 @@
         let progressHeight = (window.pageYOffset / totalHeight) * 100;
         progress.style.height = progressHeight + "%";
       };
+    </script>
+    <!-- Do info o dzialaniu na urzadzeniach mobilnych -->
+    <script type="text/javascript">
+      (function () {
+        var visited = localStorage.getItem("visited");
+        if (!visited) {
+          document.getElementById("popupp").style.visibility = "visible";
+          localStorage.setItem("visited", true);
+        }
+      })();
     </script>
   </body>
 </html>
