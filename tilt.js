@@ -1,3 +1,6 @@
+var screen = screen.width;
+if (screen> 800) {       
+
 var VanillaTilt = (function () {
   "use strict";
 
@@ -577,4 +580,5 @@ var VanillaTilt = (function () {
   }
 
   return VanillaTilt;
-})();
+})(); 
+}
