@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="subpage.css" />
+    <link rel="icon" type="image/png" href="../../images/king.png" />
+    <title>Galeria - Chrobry</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <body>
+    <div id="progressbar"></div>
+    <div id="scrollPath"></div>
+    <header>
+      <p><b>Galeria - Chrobry</b></p>
+    </header>
+
+    <main>
+      <div class="staticNAV">
+        <a href="../../index.html">
+          <img class="arrow" src="../../images/right-arrow.png" alt="arrow" />
+        </a>
+        <!--<nav>
+          <a> W skrócie </a>
+          <a> Znaczenie strategiczne </a>
+          <a href="#wydarzenia"> Wydarzenia </a>
+          <a> Przynależność do ziem Polskich </a>
+        </nav> 
+        <hr /> -->
+		</div>
+		<section style="text-align: center;">
+			<hr class="przedzial">
+			<img src="../../images/bol.jpeg" alt="obraz1" class="obraz" title="Bolesław Chrobry">
+			<hr class="przedzial">
+			<img src="../../images/boleslaw-20zl.jpg" alt="obraz2" class="obraz" title="Wizerunek Bolesława Chrobrego na banknocie 20zł">
+			<hr class="przedzial">
+			<img src="../../images/chrobry_kijow.jpg" alt="obraz2" class="obraz" title="Bolesław Chrobry jako jeden z dwóch polaków wkroczył paradnie do Kijowa(w 1018r.) - dokonał tego jeszcze tylko Józef Piłsudzki">
+			<hr class="przedzial">
+		</section>
+	</main>
+
+    <div class="footer">
+      <ul>
+        Autorzy:
+        <li>Remigiusz Łukasik</li>
+        <li>Bartosz Łukasik</li>
+        <li>Jacek Dombrowski</li>
+      </ul>
+      <p><b>STRONA W BUDOWIE</b></p>
+      <p>Źródła:</p>
+    </div>
+    <script>
+      let progress = document.getElementById("progressbar");
+      let totalHeight = document.body.scrollHeight - window.innerHeight;
+      window.onscroll = function () {
+        let progressHeight = (window.pageYOffset / totalHeight) * 100;
+        progress.style.height = progressHeight + "%";
+      };
+    </script>
+  </body>
+</html>
