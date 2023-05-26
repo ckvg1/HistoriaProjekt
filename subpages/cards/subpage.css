@@ -227,6 +227,18 @@ hr {
   );
   height: 5px;
 }
+fieldset{
+  width: 80%;
+  margin: auto;
+  height: auto;
+  padding: 20px;
+  border-radius: 20px;
+  border: 5px solid;
+  font-size: smaller;
+}
+fieldset legend{
+  padding: 10px;
+}
 main {
   display: block;
   margin: auto;
@@ -268,7 +280,14 @@ main section p {
 main section b {
   color: rgb(184, 134, 50);
 }
-
+.footer p a{
+  text-decoration: none;
+  transition-duration: 0.8s;
+  
+}
+.footer p a:hover{
+  color:#b23ec4;
+}
 /*
 .galeria-container {
   margin-top: 80px;
