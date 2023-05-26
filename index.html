@@ -185,7 +185,7 @@
 
     <script type="text/javascript">
       var screen = screen.width;
-      if (screen > 480) {
+      if (screen > 800) {
         VanillaTilt.init(document.querySelector("td"), {
           max: 25,
           speed: 400,
@@ -204,7 +204,7 @@
     </script>
     <!-- Do info o dzialaniu na urzadzeniach mobilnych -->
     <script type="text/javascript">
-      if (screen < 480) {
+      if (screen < 800) {
         (function () {
           var visited = localStorage.getItem("visited");
           if (!visited) {
