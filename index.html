@@ -146,7 +146,7 @@
           />
         </map>
       </div>
-	  <p
+      <p
         style="
           text-align: center;
           font-size: 7pt;
@@ -214,15 +214,14 @@
     </script>
     <!-- Do info o dzialaniu na urzadzeniach mobilnych -->
     <script type="text/javascript">
-      if (screen < 800) {
-        (function () {
-          var visited = localStorage.getItem("visited");
-          if (!visited) {
-            document.getElementById("popupp").style.visibility = "visible";
-            localStorage.setItem("visited", true);
-          }
-        })();
-      }
+      
+      (function () {
+        var visited = localStorage.getItem("visited");
+        if (!visited && window.screen.width < 800) {
+          document.getElementById("popupp").style.visibility = "visible";
+          localStorage.setItem("visited", true);
+        }
+      })();
     </script>
   </body>
 </html>
