@@ -93,8 +93,8 @@ body::-webkit-scrollbar {
 
   background-image: linear-gradient(
     to top,
-    rgb(162, 64, 110),
-    rgb(107, 27, 59)
+    rgb(27, 183, 226),
+    rgb(43, 62, 131)
   );
   animation: animate 5s linear infinite;
 }
@@ -117,8 +117,8 @@ body::-webkit-scrollbar {
   height: 100%;
   background-image: linear-gradient(
     to top,
-    rgb(144, 49, 165),
-    rgb(176, 99, 51)
+    rgb(27, 183, 226),
+    rgb(43, 62, 131)
   );
   filter: blur(10px);
   background: none;
@@ -132,7 +132,7 @@ body::-webkit-scrollbar {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: linear-gradient(to top, rgb(96, 20, 30), rgb(131, 43, 97));
+  background-image: linear-gradient(to top, rgb(27, 183, 226), rgb(43, 62, 131));
   filter: blur(30px);
   z-index: -1;
   background: none;
@@ -242,6 +242,8 @@ hr {
     rgb(65, 25, 105) 70%
   );
   height: 5px;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 main {
   display: block;
@@ -289,4 +291,11 @@ img.mapka_ziemie{
 	width: 90%;
 	margin: auto;
 	border: none;
+}
+.caption{
+  font-size: 13px;
+}
+.justify{
+  text-align: justify;
+  text-align-last: center;
 }

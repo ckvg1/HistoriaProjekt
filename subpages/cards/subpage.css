@@ -330,4 +330,5 @@ main section b {
 }
 .justify{
   text-align: justify;
+  text-align-last: center;
 }
