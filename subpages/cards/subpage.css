@@ -309,9 +309,9 @@ main section b {
 	width: 70%;
 	border: none;
 }
-hr.przedzial{
-	margin-top: 5px;
-	margin-bottom: 10px;
+.przedzial{
+	margin-top: 25px;
+	margin-bottom: 30px;
 	size: 5px;
 	width: 100%;
 	
