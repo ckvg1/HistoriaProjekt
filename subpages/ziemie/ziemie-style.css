@@ -1,36 +1,63 @@
 @import url("https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-@media (max-width: 505px) {
-  main {
-    height: 60%;
+@media (max-width: 494px) {
+  main .staticNAV a .arrow {
+    float: none;
+    margin: auto;
+    padding: auto;
+    clear: both;
   }
-  body {
-    height: 100%;
+  main .staticNAV nav {
+    display: none;
   }
-  main section p {
-    font-size: 18px;
+  hr:first-of-type {
+    margin-top: 10%;
   }
   main section h1 {
     font-size: 30px;
   }
-  main secrion h4 {
-    font-size: 20px;
+  main section p {
+    font-size: 18px;
   }
-  nav {
-    width: 150px;
-    font-size: smaller;
-    height: 100px;
-    align-items: first baseline;
-    justify-content: space-evenly;
-    gap: 10px;
+  .footer {
+    font-size: 10px;
   }
-  nav a {
-    font-size: 20px;
-    width: 20px;
-    height: 20px;
+  .justify{
+    text-align: center;
   }
-  main .staticNAV a img {
-    width: 30px;
+  
+  main section p img{
+    width: 50%;
   }
+  
+}
+@media (max-width: 800px) and (min-width: 495px) {
+  main .staticNAV nav a {
+    margin-top: 30px;
+    font-size: 13px;
+  }
+  main .staticNAV nav {
+    justify-content: flex-start;
+    
+  }
+  main section h1 {
+    font-size: 35px;
+  }
+  main section p {
+    font-size: 22px;
+  }
+  .footer {
+    font-size: 15px;
+  }
+  .alert {
+    visibility: visible;
+  }
+  .justify{
+    text-align: center
+  }
+  main section p img{
+    width: 70%;
+  }
+  
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Stint+Ultra+Condensed&display=swap");
@@ -287,10 +314,9 @@ main section p {
 main section b {
   color: rgb(184, 134, 50);
 }
-img.mapka_ziemie{
-	width: 90%;
-	margin: auto;
-	border: none;
+.mapka_ziemie{
+	width: 30%;
+  height: 30%;
 }
 .caption{
   font-size: 13px;
@@ -298,4 +324,7 @@ img.mapka_ziemie{
 .justify{
   text-align: justify;
   text-align-last: center;
+}
+section p img{
+  width: 20%;
 }
