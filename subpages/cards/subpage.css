@@ -21,6 +21,15 @@
   .footer {
     font-size: 10px;
   }
+  .justify{
+    text-align: center;
+  }
+  fieldset legend{
+    font-size:17px;
+  }
+  fieldset{
+    font-size: 12px;
+  }
 }
 @media (max-width: 800px) and (min-width: 495px) {
   main .staticNAV nav a {
@@ -42,6 +51,9 @@
   }
   .alert {
     visibility: visible;
+  }
+  .justify{
+    text-align: center
   }
 }
 
@@ -315,4 +327,7 @@ main section b {
 	size: 5px;
 	width: 100%;
 	
+}
+.justify{
+  text-align: justify;
 }
