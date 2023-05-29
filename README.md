@@ -1,6 +1,8 @@
 # HistoriaProjekt
 Prototyp strony internetowej stworzonej na potrzeby projektu z historii.
 
------------------
-STRONA W BUDOWIE
------------------
+Autorzy:
+Remigiusz Łukasik
+Bartosz Łukasik
+Jacek Dombrowski
+
